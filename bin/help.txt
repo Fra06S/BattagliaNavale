@@ -1,0 +1,21 @@
+Avvio di una partita multigiocatore:
+    Inserisci un numero di porta di 4 cifre compreso tra 1024 e 9999
+    e clicca sul pulsante "Crea un server". Quindi, connetti
+    i due giocatori client utilizzando lo stesso numero di porta
+    e cliccando sul pulsante "Connetti al server".
+
+Partita giocatore singolo:
+    Scegli il pulsante giocatore singolo per giocare contro un'IA.
+
+Regole:
+    Inizia posizionando le tue navi sulla griglia (griglia inferiore - puoi anche
+    scegliere di ruotare le tue navi cliccando sul pulsante "Ruota").
+
+    Una volta posizionate tutte e cinque le navi, clicca su "Pronto"
+    (attendi l'avversario se giochi in modalità multigiocatore).
+    Una volta iniziata la partita, a turno, indovina la posizione
+    delle navi nemiche usando la griglia superiore. Una volta che tutte le navi nemiche
+    sono state affondate o hai perso tutte le tue navi,
+    la partita termina. Il vincitore è colui che ha ancora delle navi
+    sopravvissute.
+EOF
