@@ -1,4 +1,5 @@
-import java.awt.Color;
+
+		import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -219,9 +220,7 @@ public class ClientUI extends JFrame implements ActionListener{
 				c.clientOut(Boolean.toString(pb.hasLost()));
 				if(pb.hasLost()) {	// if the player lost
 					servermsg.setText("Hai perso!");
-
 					c.clientOut("Esci");
-					c.endClient();
 					break;
 				}
 			}
@@ -247,8 +246,7 @@ public class ClientUI extends JFrame implements ActionListener{
 				if (hasWon) {
 					servermsg.setText("Hai Vinto!");
 					c.clientOut("Esci");
-					// c.endClient();
-					break;
+					
 				}
 			}
 
@@ -361,13 +359,13 @@ public class ClientUI extends JFrame implements ActionListener{
 				btnRotate.setVisible(false);
 				btnReady.setVisible(false);
 
-				if (!servermsg.getText().equals("Your move!")) {
-					servermsg.setText("Waiting for opponent to be ready...");
+				if (!servermsg.getText().equals("La tua mossa!")) {
+					servermsg.setText("Aspettando che l'avversario sia pronto...");
 				}
 
-				if(title.getText().equals("Player 2")) {
+				if(title.getText().equals("Giocatore 2")) {
 					try {
-						c.clientOut("Ready");
+						c.clientOut("Pronto");
 					} catch (IOException e1) {
 
 					}
@@ -466,6 +464,12 @@ public class ClientUI extends JFrame implements ActionListener{
 
 			}
 		}
+
+	}
+
+
+}
+
 
 	}
 
